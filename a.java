@@ -11,8 +11,12 @@ public class QueueDequeMenu {
             System.out.println("1. Enqueue");
             System.out.println("2. Dequeue");
             System.out.println("3. Peek");
-            System.out.println("4. Display");
-            System.out.println("5. Exit");
+	    System.out.println("4. Search");
+
+
+            System.out.println("5. Display");
+
+            System.out.println("6. Exit");
             System.out.print("Enter your choice: ");
             choice = sc.nextInt();
 
@@ -47,8 +51,12 @@ public class QueueDequeMenu {
                         System.out.println("Queue elements: " + queue);
                     }
                     break;
+                 case 5 :
+		  System.out.println("Searching");
 
-                case 5:
+
+
+                case 6:
                     System.out.println("Exiting program...");
                     break;
 
@@ -56,7 +64,7 @@ public class QueueDequeMenu {
                     System.out.println("Invalid choice.");
             }
 
-        } while(choice != 5);
+        } while(choice != 6);
 
         sc.close();
     }
